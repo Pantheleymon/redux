@@ -1,6 +1,7 @@
 {
   "name": "redux",
   "version": "0.1.0",
+  "homepage": "https://Pantheleymon.github.io/redux",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.1",
@@ -17,11 +18,14 @@
     "react-scripts": "5.0.1",
     "react-transition-group": "^4.4.5",
     "redux": "^5.0.1",
+    "reselect": "^5.1.0",
     "sass": "^1.71.0",
     "uuid": "^9.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "concurrently \"react-scripts start\" \"npx json-server heroes.json --port 3001\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -46,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "json-server": "^0.17.4"
   }
 }
