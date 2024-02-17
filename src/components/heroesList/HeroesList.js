@@ -25,7 +25,7 @@ const filteredHeroesSelector = createSelector(
 );
 
     const filteredHeroes = useSelector(filteredHeroesSelector);
-    const {heroesLoadingStatus} = useSelector(state => state);
+    const {heroesLoadingStatus} = useSelector(state => state.heroes);
     const dispatch = useDispatch();
     const {request} = useHttp();
 
